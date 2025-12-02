@@ -1,0 +1,232 @@
+ERROR - 2025-09-04 12:16:37 --> mysqli_sql_exception: Deadlock found when trying to get lock; try restarting transaction in /home/digibangla/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/digibangla/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `ci_sess...', 0)
+#1 /home/digibangla/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `ci_sess...')
+#2 /home/digibangla/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `ci_sess...')
+#3 /home/digibangla/public_html/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `ci_sess...', Array, false)
+#4 /home/digibangla/public_html/system/Session/Handlers/DatabaseHandler.php(219): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('ddfdd1ba12284bd...', '__ci_last_regen...')
+#6 [internal function]: session_write_close()
+#7 {main}
+CRITICAL - 2025-09-04 12:20:56 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 13:03:01 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 16:12:03 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts(1, 38)
+ 4 APPPATH/Controllers/AjaxController.php(44): getLatestPosts(1, 38)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\AjaxController->loadMorePosts()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 19:40:34 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 20:04:45 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 20:14:17 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 20:20:43 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(38): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 20:21:21 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 20:47:45 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 21:21:12 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 21:21:42 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 21:24:30 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 21:26:42 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 21:27:12 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 22:23:22 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 22:29:35 --> ErrorException: Undefined variable $featuredPostsId
+in APPPATH/Common.php on line 1837.
+ 1 APPPATH/Common.php(1837): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $featuredPostsId', '/home/digibangla/public_html/app/Common.php', 1837)
+ 2 APPPATH/Models/PostModel.php(80): getFeaturedPostsId()
+ 3 APPPATH/Common.php(1992): App\Models\PostModel->getLatestPosts('1', 20)
+ 4 APPPATH/Controllers/HomeController.php(36): getLatestPosts('1', 20)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 23:31:35 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 23:31:58 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,12 @@
+CRITICAL - 2025-02-03 17:32:50 --> ErrorException: Allowed memory size of 134217728 bytes exhausted (tried to allocate 229376 bytes)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-02-03 17:32:50 --> mysqli_sql_exception: Commands out of sync; you can't run this command now in /home/digibangla/public_html/newsite/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/digibangla/public_html/newsite/system/Database/MySQLi/Connection.php(306): mysqli->query('UPDATE `ci_sess...', 0)
+#1 /home/digibangla/public_html/newsite/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `ci_sess...')
+#2 /home/digibangla/public_html/newsite/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `ci_sess...')
+#3 /home/digibangla/public_html/newsite/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `ci_sess...', Array, false)
+#4 /home/digibangla/public_html/newsite/system/Session/Handlers/DatabaseHandler.php(219): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('54908eb983ccdd1...', '__ci_last_regen...')
+#6 {main}

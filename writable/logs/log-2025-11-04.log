@@ -1,0 +1,310 @@
+ERROR - 2025-11-04 04:55:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'digibangla_loca...', 3306, '', 0)
+#1 G:\wamp64\www\digibangla\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 G:\wamp64\www\digibangla\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+#4 G:\wamp64\www\digibangla\system\Session\Session.php(919): session_start()
+#5 G:\wamp64\www\digibangla\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 G:\wamp64\www\digibangla\system\Config\Services.php(699): CodeIgniter\Session\Session->start()
+#7 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 G:\wamp64\www\digibangla\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 G:\wamp64\www\digibangla\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 G:\wamp64\www\digibangla\app\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 G:\wamp64\www\digibangla\app\Config\Globals.php(159): Config\Globals::setGlobals()
+#13 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\d...')
+#14 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\d...')
+#15 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+#16 G:\wamp64\www\digibangla\app\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+#17 G:\wamp64\www\digibangla\system\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\d...')
+#18 G:\wamp64\www\digibangla\system\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+#19 G:\wamp64\www\digibangla\system\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#20 G:\wamp64\www\digibangla\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 G:\wamp64\www\digibangla\index.php(95): CodeIgniter\CodeIgniter->run()
+#22 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 G:\wamp64\www\digibangla\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 G:\wamp64\www\digibangla\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+#3 G:\wamp64\www\digibangla\system\Session\Session.php(919): session_start()
+#4 G:\wamp64\www\digibangla\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 G:\wamp64\www\digibangla\system\Config\Services.php(699): CodeIgniter\Session\Session->start()
+#6 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 G:\wamp64\www\digibangla\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 G:\wamp64\www\digibangla\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 G:\wamp64\www\digibangla\app\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 G:\wamp64\www\digibangla\app\Config\Globals.php(159): Config\Globals::setGlobals()
+#12 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\d...')
+#13 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\d...')
+#14 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+#15 G:\wamp64\www\digibangla\app\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+#16 G:\wamp64\www\digibangla\system\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\d...')
+#17 G:\wamp64\www\digibangla\system\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+#18 G:\wamp64\www\digibangla\system\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#19 G:\wamp64\www\digibangla\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 G:\wamp64\www\digibangla\index.php(95): CodeIgniter\CodeIgniter->run()
+#21 {main}
+ERROR - 2025-11-04 04:55:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'digibangla_loca...', 3306, '', 0)
+#1 G:\wamp64\www\digibangla\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 G:\wamp64\www\digibangla\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+#4 G:\wamp64\www\digibangla\system\Session\Session.php(919): session_start()
+#5 G:\wamp64\www\digibangla\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 G:\wamp64\www\digibangla\system\Config\Services.php(699): CodeIgniter\Session\Session->start()
+#7 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 G:\wamp64\www\digibangla\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 G:\wamp64\www\digibangla\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 G:\wamp64\www\digibangla\app\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 G:\wamp64\www\digibangla\app\Config\Globals.php(159): Config\Globals::setGlobals()
+#13 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\d...')
+#14 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\d...')
+#15 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+#16 G:\wamp64\www\digibangla\app\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+#17 G:\wamp64\www\digibangla\system\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\d...')
+#18 G:\wamp64\www\digibangla\system\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+#19 G:\wamp64\www\digibangla\system\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#20 G:\wamp64\www\digibangla\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 G:\wamp64\www\digibangla\index.php(95): CodeIgniter\CodeIgniter->run()
+#22 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in G:\wamp64\www\digibangla\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 G:\wamp64\www\digibangla\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 G:\wamp64\www\digibangla\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+#3 G:\wamp64\www\digibangla\system\Session\Session.php(919): session_start()
+#4 G:\wamp64\www\digibangla\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 G:\wamp64\www\digibangla\system\Config\Services.php(699): CodeIgniter\Session\Session->start()
+#6 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 G:\wamp64\www\digibangla\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 G:\wamp64\www\digibangla\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 G:\wamp64\www\digibangla\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 G:\wamp64\www\digibangla\app\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 G:\wamp64\www\digibangla\app\Config\Globals.php(159): Config\Globals::setGlobals()
+#12 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\d...')
+#13 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\d...')
+#14 G:\wamp64\www\digibangla\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+#15 G:\wamp64\www\digibangla\app\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+#16 G:\wamp64\www\digibangla\system\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\d...')
+#17 G:\wamp64\www\digibangla\system\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+#18 G:\wamp64\www\digibangla\system\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#19 G:\wamp64\www\digibangla\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 G:\wamp64\www\digibangla\index.php(95): CodeIgniter\CodeIgniter->run()
+#21 {main}
+CRITICAL - 2025-11-04 04:55:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(699): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH\Config\Globals.php(159): Config\Globals::setGlobals()
+12 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\digibangla\\app\\Config\\Globals.php')
+13 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\digibangla\\app\\Config\\Globals.php')
+14 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+15 APPPATH\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+16 SYSTEMPATH\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\digibangla\\app\\Config\\Routes.php')
+17 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+18 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+19 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-04 04:55:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'vr_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(699): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Config\Globals.php(46): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH\Config\Globals.php(159): Config\Globals::setGlobals()
+12 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('G:\\wamp64\\www\\digibangla\\app\\Config\\Globals.php')
+13 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('G:\\wamp64\\www\\digibangla\\app\\Config\\Globals.php')
+14 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+15 APPPATH\Config\Routes.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+16 SYSTEMPATH\Router\RouteCollection.php(345): require('G:\\wamp64\\www\\digibangla\\app\\Config\\Routes.php')
+17 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+18 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+19 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(95): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-04 04:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 04:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 04:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 04:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 05:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 14:57:22 --> CSRF token verified.
+INFO - 2025-11-04 08:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 14:57:35 --> CSRF token verified.
+INFO - 2025-11-04 08:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 14:57:45 --> CSRF token verified.
+INFO - 2025-11-04 08:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 14:57:51 --> CSRF token verified.
+INFO - 2025-11-04 08:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 08:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 15:30:33 --> CSRF token verified.
+INFO - 2025-11-04 09:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 15:31:07 --> CSRF token verified.
+INFO - 2025-11-04 09:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 15:49:49 --> CSRF token verified.
+INFO - 2025-11-04 09:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 09:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 16:29:58 --> CSRF token verified.
+INFO - 2025-11-04 10:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 16:29:59 --> CSRF token verified.
+INFO - 2025-11-04 10:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 10:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-04 11:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

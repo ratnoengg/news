@@ -1,0 +1,32 @@
+{
+    "dir": "ltr",
+    "name": "BD TECH NEWS - Digi Bangla",
+    "description": "Bilingual online news portal for up-to-date information on education, science &amp; technology in Bangladesh and around the world.",
+    "short_name": "Digibangla",
+    "icons": [
+        {
+            "src": "https://digibanglatech.news/assets/img/pwa/144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "https://digibanglatech.news/assets/img/pwa/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://digibanglatech.news/assets/img/pwa/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "scope": "/",
+    "start_url": "https://digibanglatech.news",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "url": "https://digibanglatech.news",
+    "lang": "",
+    "screenshots": []
+}

@@ -1,0 +1,1 @@
+[13-Feb-2025 18:31:06 Asia/Dhaka] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/digibangla/public_html/system/Database/MySQLi/Result.php on line 138

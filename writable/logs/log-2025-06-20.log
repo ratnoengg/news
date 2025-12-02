@@ -1,0 +1,80 @@
+CRITICAL - 2025-06-20 03:11:58 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154820')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 06:49:34 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('casio-confirms-ransomware-attack-exposed-data-of-8500-individuals')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 19:03:40 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154767')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 20:12:25 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154767')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 20:12:44 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154767')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 20:16:31 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154767')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 21:22:33 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154767')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-20 22:43:51 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2410.
+ 1 APPPATH/Common.php(2410): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2410)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('154805')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()

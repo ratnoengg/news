@@ -1,0 +1,53 @@
+:root {
+    /* --bg-green: #198754; */
+    --bg-green: #2c934b;
+}
+
+
+#header {
+    background-color: var(--bg-green) !important;
+}
+
+.nav-main .logo {
+    height: 128px;
+    width: 150px;
+    margin-top: -82px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.date-container {
+    height: 42px;
+}
+
+.dates {
+    position: absolute;
+    width: 500px;
+    top: 62px;
+    left: -175px;
+}
+
+.nav-item.bg-white {
+    padding: 2px;
+}
+
+.date-main {
+    height: 40px;
+}
+
+.mobile-search-form {
+    background-color: var(--bg-green) !important;;
+}
+
+@media (max-width: 991.98px) {
+    .dates {
+        top: 60px;
+        left: -204px;
+    }
+}

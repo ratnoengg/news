@@ -1,0 +1,30 @@
+CRITICAL - 2025-03-14 00:15:52 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2360.
+ 1 APPPATH/Common.php(2360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2360)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('151990')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 16:08:50 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2360.
+ 1 APPPATH/Common.php(2360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2360)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('The investigation regarding irregularities in a2i may start from Monday')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 23:30:14 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2360.
+ 1 APPPATH/Common.php(2360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2360)
+ 2 APPPATH/Models/PostModel.php(392): isBot()
+ 3 APPPATH/Controllers/HomeController.php(197): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(113): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('151921')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()

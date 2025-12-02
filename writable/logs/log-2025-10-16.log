@@ -1,0 +1,214 @@
+CRITICAL - 2025-10-16 11:36:56 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 13:43:27 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('155428')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 13:46:00 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 14:45:14 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 14:47:19 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 14:47:29 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 15:52:25 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 16:08:04 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 16:08:27 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 16:08:48 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 17:25:26 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 17:27:51 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 17:40:14 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /home/digibangla/public_html/app/Models/FileModel.php on line 100
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 APPPATH/Models/FileModel.php(100): CodeIgniter\Database\BaseBuilder->like('file_name', null)
+ 2 APPPATH/Controllers/FileController.php(69): App\Models\FileModel->searchImages(null)
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FileController->searchImage()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileController))
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 20:04:22 --> ErrorException: Undefined array key "HTTP_USER_AGENT"
+in APPPATH/Common.php on line 2514.
+ 1 APPPATH/Common.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_USER_AGENT"', '/home/digibangla/public_html/app/Common.php', 2514)
+ 2 APPPATH/Models/PostModel.php(417): isBot()
+ 3 APPPATH/Controllers/HomeController.php(200): App\Models\PostModel->increasePostPageviews(Object(stdClass), Object(stdClass))
+ 4 APPPATH/Controllers/HomeController.php(116): App\Controllers\HomeController->post(Object(stdClass))
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomeController->any('158377')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:34:23 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/getImages', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:34:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:34:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:34:29 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:34:30 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:00 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('Category/getSubCategories', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:15 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/getImages', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:18 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-16 22:35:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('File/searchImage', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(95): CodeIgniter\CodeIgniter->run()
