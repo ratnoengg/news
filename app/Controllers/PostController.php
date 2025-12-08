@@ -346,6 +346,27 @@ class PostController extends BaseAdminController
         echo view('admin/includes/_footer');
     }
 
+
+    /**
+     * Breaking news
+     */
+    public function sarabanglaNews()
+    {
+        checkPermission('manage_all_posts');
+        $data['title'] = trans('breaking_news');
+        $data['authors'] = $this->authModel->getUsersHavePosts();
+        $data['formAction'] = adminUrl('sarabangla-news');
+        $data['listType'] = 'sarabangla_news';
+        $data['panelSettings'] = panelSettings();
+        $numRows = $this->postAdminModel->getPostsCount('sarabangla_news');
+        $data['pager'] = paginate($this->perPage, $numRows);
+        $data['posts'] = $this->postAdminModel->getPostsPaginated('sarabangla_news', $this->perPage, $data['pager']->offset);
+
+        echo view('admin/includes/_header', $data);
+        echo view('admin/post/posts', $data);
+        echo view('admin/includes/_footer');
+    }
+
     /**
      * Recommended Posts
      */
@@ -449,6 +470,11 @@ class PostController extends BaseAdminController
         } elseif ($option == 'add_remove_breaking') {
             checkPermission('manage_all_posts');
             if ($this->postAdminModel->addRemoveBreaking($post)) {
+                $result = true;
+            }
+        } elseif ($option == 'add_remove_sarabangla') {
+            checkPermission('manage_all_posts');
+            if ($this->postAdminModel->addRemoveSarabangla($post)) {
                 $result = true;
             }
         } elseif ($option == 'add_remove_recommended') {

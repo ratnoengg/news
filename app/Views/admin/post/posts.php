@@ -78,6 +78,9 @@
                                                     if ($item->is_breaking): ?>
                                                         <label class="label bg-teal label-table"><?= trans('breaking'); ?></label>
                                                     <?php endif;
+                                                    if ($item->is_sarabangla): ?>
+                                                        <label class="label bg-teal label-table"><?= 'Sarabangla'; ?></label>
+                                                    <?php endif;
                                                     if ($item->need_auth): ?>
                                                         <label class="label label-warning label-table"><?= trans('only_registered'); ?></label>
                                                     <?php endif; ?>
@@ -171,6 +174,20 @@
                                                                     <i class="fa fa-plus option-icon"></i><?= trans('add_breaking'); ?>
                                                                 </button>
                                                             </li>
+
+                                                        <?php endif;
+                                                        if ($item->is_sarabangla == 1): ?>
+                                                            <li>
+                                                                <button type="submit" name="option" value="add_remove_sarabangla" class="btn-list-button">
+                                                                    <i class="fa fa-times option-icon"></i><?= 'Remove Sarabangla'; ?>
+                                                                </button>
+                                                            </li>
+                                                        <?php else: ?>
+                                                            <li>
+                                                                <button type="submit" name="option" value="add_remove_sarabangla" class="btn-list-button">
+                                                                    <i class="fa fa-plus option-icon"></i><?= 'Add Sarabangla'; ?>
+                                                                </button>
+                                                            </li>
                                                         <?php endif;
                                                         if ($item->is_recommended == 1): ?>
                                                             <li>
@@ -217,6 +234,9 @@
                                     <?php endif;
                                     if ($listType != 'breaking_news'): ?>
                                         <button class="btn btn-sm btn-default btn-table-delete" onclick="postBulkOptions('add_breaking');"><i class="fa fa-plus option-icon"></i><?= trans('add_breaking'); ?></button>
+                                    <?php endif;
+                                    if ($listType != 'sarabangla_news'): ?>
+                                        <button class="btn btn-sm btn-default btn-table-delete" onclick="postBulkOptions('add_sarabangla');"><i class="fa fa-plus option-icon"></i><?= 'Add Sarabangla'; ?></button>
                                     <?php endif;
                                     if ($listType != 'recommended_posts'): ?>
                                         <button class="btn btn-sm btn-default btn-table-delete" onclick="postBulkOptions('add_recommended');"><i class="fa fa-plus option-icon"></i><?= trans('add_recommended'); ?></button>

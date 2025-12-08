@@ -154,8 +154,8 @@ class HomeController extends BaseController
         $data['comments'] = $this->commonModel->getComments($post->id, COMMENT_LIMIT);
         $data['commentLimit'] = COMMENT_LIMIT;
         $data['relatedPosts'] = $this->postModel->getRelatedPosts($post->category_id, $post->id, $this->categories);
-        $data['previousPost'] = $this->postModel->getPreviousPost($post->id);
-        $data['nextPost'] = $this->postModel->getNextPost($post->id);
+        $data['previousPost'] = $this->postModel->getPreviousPost($post->id, $post->category_id);
+        $data['nextPost'] = $this->postModel->getNextPost($post->id, $post->category_id);
         $data['postType'] = $post->post_type;
         if (!empty($post->feed_id)) {
             $rssModel = new RssModel();
@@ -483,8 +483,12 @@ class HomeController extends BaseController
     /**
      * Rss Latest Posts
      */
-    public function rssLatestPosts()
+    public function rssLatestPosts($slug='all')
     {
+
+       // echo $slug;
+       // die();
+
         if ($this->generalSettings->show_rss == 1) {
             $data['userSession'] = getUserSession();
             helper('xml');
@@ -494,7 +498,7 @@ class HomeController extends BaseController
             $data['pageDescription'] = $this->settings->site_title . ' - ' . trans("latest_posts");
             $data['pageLanguage'] = $this->activeLang->short_form;
             $data['creatorEmail'] = '';
-            $data['posts'] = $this->postModel->getRSSPosts(null, null, $this->categories, 50);
+            $data['posts'] = $this->postModel->getRSSPosts(null, null, $this->categories, 50, $slug);
             header('Content-Type: application/rss+xml; charset=utf-8');
             return $this->response->setXML(view('common/xml_rss', $data));
         } else {

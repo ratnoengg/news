@@ -34,14 +34,16 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
 
-                        <div style="text-align: center;">
+                         <div class="footer-logo" style="text-align: center;">
+                        <a href="https://digibanglatech.news/">    <img src="<?= getLogoFooter(); ?>" alt="logo" class="logo" style="width: 150px !important; height: 120px !important; max-height: 150px !important;" ></a>
+                        </div>
+
+                        <div style="text-align: center;" class="mb-4">
                            First ever Science, Tech & youth based 24/7 bi-lingual Govt Registerd  infotainment portal.
 
                         </div>
 
-                        <div class="footer-logo" style="text-align: center;">
-                        <a href="https://digibanglatech.news/">    <img src="<?= getLogoFooter(); ?>" alt="logo" class="logo" style="width: 150px !important; height: 120px !important; max-height: 150px !important;" ></a>
-                        </div>
+                       
 
 
                         

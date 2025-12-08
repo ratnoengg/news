@@ -78,7 +78,7 @@ class PostModel extends BaseModel
        // echo"</pre>";
 
        $this->buildQuery($langId);
-        return $this->builder->whereNotIn('posts.id ', getFeaturedPostsId())->whereNotIn('posts.category_id ', array(39,40,41,86))->orderBy('posts.created_at DESC, id DESC')->limit(cleanNumber($limit))->get()->getResult();
+        return $this->builder->whereNotIn('posts.id ', getFeaturedPostsId())->whereNotIn('posts.category_id ', array(39,40,41,86,87))->orderBy('posts.created_at DESC, id DESC')->limit(cleanNumber($limit))->get()->getResult();
     }
 
     //get slider posts
@@ -212,7 +212,7 @@ class PostModel extends BaseModel
     public function getPostsPaginated($perPage, $offset)
     {
         $this->buildQuery();
-        return $this->builder->whereNotIn('posts.category_id ', array(39,40,41,86))->orderBy('posts.created_at DESC')->limit($perPage, $offset)->get()->getResult();
+        return $this->builder->whereNotIn('posts.category_id ', array(39,40,41,86,87))->orderBy('posts.created_at DESC')->limit($perPage, $offset)->get()->getResult();
     }
 
     //get post by slug
@@ -308,15 +308,36 @@ class PostModel extends BaseModel
     }
 
     //get previous post
-    public function getPreviousPost($id)
+    public function getPreviousPost($id, $cat_id=0)
     {
-        return $this->builder->where('posts.id <', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id DESC')->get(1)->getRow();
+
+      
+        if($cat_id == 39 || $cat_id == 40 ||$cat_id == 41){
+
+            return $this->builder->whereIn('posts.category_id', array(39,40,41,86), false)->where('posts.id <', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id DESC')->get(1)->getRow();
+
+        }else{
+
+            return $this->builder->whereNotIn('posts.category_id', array(39,40,41,86), false)->where('posts.id <', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id DESC')->get(1)->getRow();
+
+        }
+        
     }
 
     //get next post
-    public function getNextPost($id)
+    public function getNextPost($id , $cat_id=0)
     {
-        return $this->builder->where('posts.id >', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id')->get(1)->getRow();
+
+      
+        if($cat_id == 39 || $cat_id == 40 ||$cat_id == 41){
+
+            return $this->builder->whereIn('posts.category_id', array(39,40,41,86), false)->where('posts.id >', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id')->get(1)->getRow();
+
+        }else{
+
+            return $this->builder->whereNotIn('posts.category_id', array(39,40,41,86), false)->where('posts.id >', cleanNumber($id))->where('posts.is_scheduled = 0')->where('posts.visibility = 1')->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))->orderBy('posts.id')->get(1)->getRow();
+
+        }
     }
 
     //get reading list posts count
@@ -370,8 +391,12 @@ class PostModel extends BaseModel
     }
 
     //get rss posts
-    public function getRSSPosts($userId, $categoryId, $categories, $limit)
+    public function getRSSPosts($userId, $categoryId, $categories, $limit, $slug='all')
     {
+        
+       //echo $slug;
+       // die();
+
         $key = 'rss_posts_lang' . cleanNumber($this->activeLang->id);
         if (!empty($categoryId)) {
             $key .= '_cat' . cleanNumber($categoryId);
@@ -379,10 +404,13 @@ class PostModel extends BaseModel
         if (!empty($userId)) {
             $key .= '_author' . cleanNumber($userId);
         }
-        $posts = cache($key);
-        if (!empty($posts)) {
-            return $posts;
+
+        if (!empty($slug)) {
+            $key .= '_type' . cleanNumber($slug);
         }
+       
+
+
         $this->builder->join('categories', 'categories.id = posts.category_id')->join('users', 'users.id = posts.user_id')
             ->select('posts.*, "' . esc($this->activeLang->short_form) . '" AS lang_short_form, categories.name AS category_name, categories.name_slug AS category_slug , categories.color AS category_color, users.username AS author_username, users.slug AS author_slug');
         if (!empty($categoryId)) {
@@ -391,9 +419,27 @@ class PostModel extends BaseModel
                 $this->builder->whereIn('posts.category_id', $categoryIds, false);
             }
         }
+
+        if($slug=='eng'){
+            $this->builder->whereIn('posts.category_id', array(39,40,41), false);
+        }elseif($slug=='ban'){
+            $this->builder->whereNotIn('posts.category_id', array(39,40,41,86), false);
+        }elseif($slug=='sarabangla'){
+            $this->builder->whereNotIn('posts.category_id', array(39,40,41,86), false);
+            $this->builder->where('posts.is_sarabangla', 1);
+        }
+
+       
         if (!empty($userId)) {
             $this->builder->where('posts.user_id', cleanNumber($userId));
         }
+
+         $posts = cache($key);
+
+        if (!empty($posts) && ($slug!='sarabangla' && $slug!='ban' && $slug!='eng' )) {
+            return $posts;
+        }
+
         $posts = $this->builder->where('posts.is_scheduled', 0)->where('posts.visibility', 1)->where('posts.status = 1')->where('posts.lang_id', cleanNumber($this->activeLang->id))
             ->orderBy('posts.created_at DESC')->get(cleanNumber($limit))->getResult();
 

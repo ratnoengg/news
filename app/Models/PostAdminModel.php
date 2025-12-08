@@ -36,6 +36,7 @@ class PostAdminModel extends BaseModel
             'is_featured' => inputPost('is_featured'),
             'is_recommended' => inputPost('is_recommended'),
             'is_breaking' => inputPost('is_breaking'),
+            'is_sarabangla' => inputPost('is_sarabangla'),
             'visibility' => inputPost('visibility'),
             'show_right_column' => inputPost('show_right_column'),
             'keywords' => inputPost('keywords'),
@@ -215,12 +216,17 @@ class PostAdminModel extends BaseModel
     public function setPostData($postType)
     {
         $data = $this->inputValues();
+
         if (!isset($data['is_featured'])) {
             $data['is_featured'] = 0;
         }
         if (!isset($data['is_breaking'])) {
             $data['is_breaking'] = 0;
         }
+         if (!isset($data['is_sarabangla'])) {
+            $data['is_sarabangla'] = 0;
+        }
+
         if (!isset($data['is_slider'])) {
             $data['is_slider'] = 0;
         }
@@ -429,6 +435,15 @@ class PostAdminModel extends BaseModel
             if ($list == 'breaking_news') {
                 $this->builder->where('posts.is_breaking', 1);
             }
+
+            if ($list == 'sarabangla_news') {
+                $this->builder->where('posts.is_sarabangla', 1);
+            }
+
+            if ($list == 'sarabangla_news') {
+                $this->builder->where('posts.is_sarabangla', 1);
+            }
+
             if ($list == 'recommended_posts') {
                 $this->builder->where('posts.is_recommended', 1);
             }
@@ -456,6 +471,19 @@ class PostAdminModel extends BaseModel
                 return $this->builder->where('id', $post->id)->update(['is_featured' => 0]);
             } else {
                 return $this->builder->where('id', $post->id)->update(['is_featured' => 1]);
+            }
+        }
+        return false;
+    }
+
+    //add or remove post from breaking
+    public function addRemoveSarabangla($post)
+    {
+        if (!empty($post)) {
+            if ($post->is_sarabangla == 1) {
+                return $this->builder->where('id', $post->id)->update(['is_sarabangla' => 0]);
+            } else {
+                return $this->builder->where('id', $post->id)->update(['is_sarabangla' => 1]);
             }
         }
         return false;
@@ -560,6 +588,10 @@ class PostAdminModel extends BaseModel
             $data['is_recommended'] = 1;
         } elseif ($operation == 'remove_recommended') {
             $data['is_recommended'] = 0;
+        } elseif ($operation == 'add_sarabangla') {
+            $data['is_sarabangla'] = 1;
+        } elseif ($operation == 'remove_sarabangla') {
+            $data['is_sarabangla'] = 0;
         } elseif ($operation == 'publish_scheduled') {
             $data['is_scheduled'] = 0;
             $data['created_at'] = date('Y-m-d H:i:s');
@@ -922,6 +954,7 @@ class PostAdminModel extends BaseModel
                     $data['featured_order'] = 0;
                     $data['is_recommended'] = 0;
                     $data['is_breaking'] = 0;
+                    $data['is_sarabangla'] = 0;
                     $data['is_scheduled'] = 0;
                     $data['visibility'] = 0;
                     $data['post_type'] = getCSVInputValue($item, 'post_type') ? getCSVInputValue($item, 'post_type') : 'article';

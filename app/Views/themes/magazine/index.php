@@ -108,9 +108,22 @@ if (!empty($baseCategories)):
 
            // echo $category->block_type ; 
 
-            if ($category->block_type == 'block-1') {
+            // if ($category->block_type == 'block-1') {
+            //     echo loadView('partials/_category_block_type_1', ['category' => $category]);
+            // }
+
+            if ($category->block_type == 'block-1' && $category->id == 87) {
+                echo loadView('partials/_category_block_type_sara_1', ['category' => $category]);
+            }
+
+            if ($category->block_type == 'block-1' && $category->id <> 87) {
                 echo loadView('partials/_category_block_type_1', ['category' => $category]);
             }
+
+
+
+
+
             if ($category->block_type == 'block-2' && $category->id == 39) {
                 echo loadView('partials/_category_block_type_eng_2', ['category' => $category]);
             }

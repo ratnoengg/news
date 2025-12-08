@@ -131,6 +131,8 @@ if (!empty($widget) && $widget->visibility == 1):
             <div class="widget-head"><h4 class="title"> <a href="<?php echo langBaseUrl() . '/advertisement/';?>"><?= esc($widget->title); ?></a></h4></div>
             <?php elseif($widget->source_category_id ==70): ?>
             <div class="widget-head"><h4 class="title"> <a href="<?php echo langBaseUrl() . '/কমিউনিটি/tech-thought/';?>"><?= esc($widget->title); ?></a></h4></div>
+            <?php elseif($widget->source_category_id ==87): ?>
+            <div class="widget-head custom d-flex align-items-center gap-2 pb-3"><h4 class="title mb-0"> <a href="https://sarabangla.net/" target="_blank"><img class="me-2" src="assets/img/sarabangla.jpg" style="width: 80px;" /><?= esc('খবর'); ?></a></h4></div>
             <?php else: ?>
             <div class="widget-head"><h4 class="title"><?= esc($widget->title); ?></h4></div>    
             <?php endif; ?>
@@ -140,14 +142,23 @@ if (!empty($widget) && $widget->visibility == 1):
 
                     if (!empty($customPosts) && $widget->source_category_id ==86): ?>
 
-                    <?php 
+                        <?php 
                         foreach ($customPosts as $item): ?>
                             <div class="col-12">
                                 <?= loadView('post/_post_item_small_add', ['postItem' => $item, 'showLabel' => false]); ?>
                             </div>
                         <?php endforeach; ?>
                     <?php
-                    elseif(!empty($customPosts) && $widget->source_category_id !=86):  ?>  
+                    elseif(!empty($customPosts) && $widget->source_category_id ==87):  ?>  
+
+                        <?php 
+                        foreach ($customPosts as $item): ?>
+                            <div class="col-12">
+                                <?= loadView('post/_post_item_small_sara', ['postItem' => $item, 'showLabel' => false]); ?>
+                            </div>
+                        <?php endforeach; ?>
+                 
+                    <?php elseif(!empty($customPosts)):  ?>  
 
                         <?php 
                         foreach ($customPosts as $item): ?>
@@ -172,3 +183,16 @@ if (!empty($widget) && $widget->visibility == 1):
         </div>
     <?php endif;
 endif; ?>
+
+
+<style>
+    .sidebar-widget .custom.widget-head::after {
+      content: '';
+      width: 60px;
+      height: 2px;
+      display: block;
+      position: relative;
+      bottom: -30px;
+      left: -124px;
+    }
+</style>

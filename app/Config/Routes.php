@@ -66,6 +66,7 @@ $routes->get($customRoutes->admin . '/posts', 'PostController::posts');
 $routes->get($customRoutes->admin . '/slider-posts', 'PostController::sliderPosts');
 $routes->get($customRoutes->admin . '/featured-posts', 'PostController::featuredPosts');
 $routes->get($customRoutes->admin . '/breaking-news', 'PostController::breakingNews');
+$routes->get($customRoutes->admin . '/sarabangla-news', 'PostController::sarabanglaNews');
 $routes->get($customRoutes->admin . '/recommended-posts', 'PostController::recommendedPosts');
 $routes->get($customRoutes->admin . '/pending-posts', 'PostController::pendingPosts');
 $routes->get($customRoutes->admin . '/scheduled-posts', 'PostController::scheduledPosts');
@@ -375,6 +376,7 @@ if (!empty($languages)) {
         $routes->get($key . $customRoutes->set_payout_account, 'EarningsController::setPayoutAccount');
         $routes->get($key . $customRoutes->rss_feeds, 'HomeController::rssFeeds');
         $routes->get($key . 'rss/latest-posts', 'HomeController::rssLatestPosts');
+        $routes->get($key . 'rss/latest-posts/(:any)', 'HomeController::rssLatestPosts/$1');
         $routes->get($key . 'rss/category/(:any)', 'HomeController::rssByCategory/$1');
         $routes->get($key . 'rss/author/(:any)', 'HomeController::rssByUser/$1');
         $routes->get($key . 'preview/(:any)', 'HomeController::preview/$1');
