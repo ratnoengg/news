@@ -407,7 +407,7 @@
                             </div>
                         <?php endif;
                         if (!empty($postUser) && $generalSettings->show_post_author == 1): ?>
-                            <div class="d-flex about-author">
+                           <!--  <div class="d-flex about-author">
                                 <div class="flex-shrink-0">
                                     <a href="<?= generateProfileURL($postUser->slug); ?>" class="author-link">
                                         <img src="<?= getUserAvatar($postUser->avatar); ?>" alt="<?= esc($postUser->username); ?>" class="img-fluid img-author" width="110" height="110">
@@ -435,7 +435,7 @@
                                         </div>
                                     <?php endif; ?>
                                 </div>
-                            </div>
+                            </div> -->
                         <?php endif;
                         echo loadView('partials/_ad_spaces', ['adSpace' => 'post_bottom', 'class' => '']); ?>
                        <!--  <section class="section section-related-posts mt-5">
@@ -824,7 +824,7 @@
                             </div>
                         <?php endif;
                         if (!empty($postUser) && $generalSettings->show_post_author == 1): ?>
-                            <div class="d-flex about-author">
+                           <!--  <div class="d-flex about-author">
                                 <div class="flex-shrink-0">
                                     <a href="<?= generateProfileURL($postUser->slug); ?>" class="author-link">
                                         <img src="<?= getUserAvatar($postUser->avatar); ?>" alt="<?= esc($postUser->username); ?>" class="img-fluid img-author" width="110" height="110">
@@ -852,7 +852,7 @@
                                         </div>
                                     <?php endif; ?>
                                 </div>
-                            </div>
+                            </div> -->
                         <?php endif;
                         echo loadView('partials/_ad_spaces', ['adSpace' => 'post_bottom', 'class' => '']); ?>
                        <!--  <section class="section section-related-posts mt-5">
