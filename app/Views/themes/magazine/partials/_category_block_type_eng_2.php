@@ -27,7 +27,7 @@ $subCategories = getSubcategories($category->id, $baseCategories, true); ?>
                                         <?php $i = 1;
                                         //print_r($feature_post);
                                         $start = $categoryWidgets->hasWidgets ? 0 : 0;
-                                        $end = $categoryWidgets->hasWidgets ? 7 : 20;
+                                        $end = $categoryWidgets->hasWidgets ? 7 : 16;
                                         if (!empty($categoryPosts)):
                                             foreach ($categoryPosts as $item):
                                                 if ($i > $start && $i <= $end && !in_array( $item->id, $feature_post)):?>

@@ -11,3 +11,5 @@ yarn-error.log
 /.phpunit.result.cache
 Homestead.json
 Homestead.yaml
+/writable/logs/
+/writable/
