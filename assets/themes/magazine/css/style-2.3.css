@@ -5757,3 +5757,7 @@ a:hover, a:active, a:focus, .nav-main .navbar-nav .active .nav-link, .mega-menu 
     margin: 0 0 1rem 0 !important;
 }
 }
+
+.bg-blue-sara {
+    background-color: #e2f5fd;
+}

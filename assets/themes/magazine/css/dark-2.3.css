@@ -482,3 +482,8 @@ div#amplitude-right {
 .vr-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #323232;
 }
+
+
+.bg-blue-sara {
+    background-color: #003e58;
+}

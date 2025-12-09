@@ -1,8 +1,8 @@
-<div class="tbl-container post-item-small<?= checkPostImg($postItem, 'class'); ?>">
+<div class="tbl-container tbl-update post-item-small<?= checkPostImg($postItem, 'class'); ?>">
     <?php if (checkPostImg($postItem)): ?>
-        <div class="tbl-cell left">
+        <div class="tbl-cell left d-block w-100">
             <?php if (checkPostImg($postItem)): ?>
-                <div class="image custom-height w-100 mb-2">
+                <div class="image custom-height h-auto w-100 mb-2">
                     <a href="<?= generatePostURL($postItem); ?>"<?php postURLNewTab($postItem); ?>>
                         <img src="<?= IMG_BASE64_1x1; ?>" data-src="<?= getPostImage($postItem, 'small'); ?>" alt="<?= esc($postItem->title); ?>" class="img-fluid w-100 lazyload" width="130" height="91"/>
                         <?php getMediaIcon($postItem, 'media-icon'); ?>
@@ -23,6 +23,10 @@
 </div>
 
 <style>
+    .tbl-container.tbl-update {
+        display: block !important;
+    }
+
     @media (max-width: 768px) {
     .post-item-small .left .image.custom-height {
         height: auto !important; 
