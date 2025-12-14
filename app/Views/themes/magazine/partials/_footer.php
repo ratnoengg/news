@@ -3,7 +3,7 @@
         <div class="footer-inner">
             <div class="container-xl">
                 <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-6 col-xxl-4 footer-widget footer-widget-about">
+                    <div class="col-sm-12 col-md-6 col-lg-4 footer-widget footer-widget-about">
                         
                         <div class="footer-about">
                          <!--    <?= $baseSettings->about_footer; ?> -->
@@ -32,7 +32,7 @@
 
                         
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xxl-4 footer-widget">
+                    <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
 
                          <div class="footer-logo" style="text-align: center;">
                         <a href="https://digibanglatech.news/">    <img src="<?= getLogoFooter(); ?>" alt="logo" class="logo" style="width: 150px !important; height: 120px !important; max-height: 150px !important;" ></a>
@@ -73,7 +73,7 @@
 
 
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xxl-4 footer-widget" >
+                    <div class="col-sm-12 col-md-6 col-lg-4 footer-widget" >
 
                         <div class="copyright text-start">
 
